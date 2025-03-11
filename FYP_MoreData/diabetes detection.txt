@@ -1,0 +1,46 @@
+Diabetes_Detection_Project/
+│── data/                                # Dataset directory  
+│   ├── diabetic_dataset/                # Folder for diabetic patient images  
+│   │   ├── DM001_M/  
+│   │   │   ├── DM001_M_L.png            # Left thermal image of patient DM001_M  
+│   │   │   ├── DM001_M_R.png            # Right thermal image of patient DM001_M  
+│   │   ├── DM002_F/  
+│   │   │   ├── DM002_F_L.png  
+│   │   │   ├── DM002_F_R.png  
+│   │   ├── ...  
+│   ├── non_diabetic_dataset/             # Folder for non-diabetic patient images  
+│   │   ├── CG001_M/  
+│   │   │   ├── CG001_M_L.png  
+│   │   │   ├── CG001_M_R.png  
+│   │   ├── CG002_F/  
+│   │   │   ├── CG002_F_L.png  
+│   │   │   ├── CG002_F_R.png  
+│   │   ├── ...  
+│   ├── train/                            # Training dataset (after split)  
+│   ├── test/                             # Testing dataset (after split)  
+│   ├── val/                              # Validation dataset (optional)  
+│  
+│── notebooks/                            # Jupyter notebooks for exploration  
+│   ├── data_preprocessing.ipynb          # Image loading, preprocessing, augmentation  
+│   ├── model_training.ipynb              # Training the CNN model  
+│   ├── model_evaluation.ipynb            # Evaluating accuracy, loss, confusion matrix  
+│  
+│── src/                                  # Source code for training & evaluation  
+│   ├── preprocessing.py                  # Code for resizing, normalizing images  
+│   ├── dataset_loader.py                 # Loads images & labels using TensorFlow/PyTorch  
+│   ├── model.py                          # CNN model architecture  
+│   ├── train.py                          # Script for training the model  
+│   ├── evaluate.py                       # Script for testing & evaluation  
+│   ├── infer.py                          # Script for making predictions  
+│  
+│── models/                               # Saved trained models  
+│   ├── best_model.pth (or .h5)  
+│  
+│── results/                              # Results & logs  
+│   ├── training_logs.csv                 # Logs of accuracy & loss  
+│   ├── evaluation_report.txt             # Precision, recall, F1-score  
+│   ├── confusion_matrix.png  
+│  
+│── requirements.txt                      # Dependencies (TensorFlow, PyTorch, OpenCV, etc.)  
+│── README.md                             # Project description & usage  
+│── app.py                                # Web app (Flask, Streamlit) for deployment  
